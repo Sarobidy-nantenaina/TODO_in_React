@@ -1,0 +1,235 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`TodoList renders correctly 1`] = `
+<div
+  className="container"
+>
+  <form
+    className="form-input"
+    onSubmit={[Function]}
+  >
+    <input
+      className="input-text"
+      onChange={[Function]}
+      placeholder=" tap here the todo..."
+      type="text"
+      value=""
+    />
+  </form>
+  <div
+    className="todo-done"
+  >
+    <div
+      className="table-todo"
+    >
+      <h3>
+        Todo
+      </h3>
+      <ul />
+    </div>
+    <div
+      className="table-done"
+    >
+      <h3>
+        Done
+      </h3>
+      <ul />
+    </div>
+  </div>
+</div>
+`;
+
+exports[`TodoList renders correctly with an empty input 1`] = `
+<div
+  className="container"
+>
+  <form
+    className="form-input"
+    onSubmit={[Function]}
+  >
+    <input
+      className="input-text"
+      onChange={[Function]}
+      placeholder=" tap here the todo..."
+      type="text"
+      value=""
+    />
+  </form>
+  <div
+    className="todo-done"
+  >
+    <div
+      className="table-todo"
+    >
+      <h3>
+        Todo
+      </h3>
+      <ul />
+    </div>
+    <div
+      className="table-done"
+    >
+      <h3>
+        Done
+      </h3>
+      <ul />
+    </div>
+  </div>
+</div>
+`;
+
+exports[`TodoList renders correctly with empty DONE arrays 1`] = `
+<div
+  className="container"
+>
+  <form
+    className="form-input"
+    onSubmit={[Function]}
+  >
+    <input
+      className="input-text"
+      onChange={[Function]}
+      placeholder=" tap here the todo..."
+      type="text"
+      value=""
+    />
+  </form>
+  <div
+    className="todo-done"
+  >
+    <div
+      className="table-todo"
+    >
+      <h3>
+        Todo
+      </h3>
+      <ul />
+    </div>
+    <div
+      className="table-done"
+    >
+      <h3>
+        Done
+      </h3>
+      <ul />
+    </div>
+  </div>
+</div>
+`;
+
+exports[`TodoList renders correctly with empty TODO and DONE arrays 1`] = `
+<div
+  className="container"
+>
+  <form
+    className="form-input"
+    onSubmit={[Function]}
+  >
+    <input
+      className="input-text"
+      onChange={[Function]}
+      placeholder=" tap here the todo..."
+      type="text"
+      value=""
+    />
+  </form>
+  <div
+    className="todo-done"
+  >
+    <div
+      className="table-todo"
+    >
+      <h3>
+        Todo
+      </h3>
+      <ul />
+    </div>
+    <div
+      className="table-done"
+    >
+      <h3>
+        Done
+      </h3>
+      <ul />
+    </div>
+  </div>
+</div>
+`;
+
+exports[`TodoList renders correctly with empty TODO array 1`] = `
+<div
+  className="container"
+>
+  <form
+    className="form-input"
+    onSubmit={[Function]}
+  >
+    <input
+      className="input-text"
+      onChange={[Function]}
+      placeholder=" tap here the todo..."
+      type="text"
+      value=""
+    />
+  </form>
+  <div
+    className="todo-done"
+  >
+    <div
+      className="table-todo"
+    >
+      <h3>
+        Todo
+      </h3>
+      <ul />
+    </div>
+    <div
+      className="table-done"
+    >
+      <h3>
+        Done
+      </h3>
+      <ul />
+    </div>
+  </div>
+</div>
+`;
+
+exports[`TodoList renders correctly with empty TODO arrays 1`] = `
+<div
+  className="container"
+>
+  <form
+    className="form-input"
+    onSubmit={[Function]}
+  >
+    <input
+      className="input-text"
+      onChange={[Function]}
+      placeholder=" tap here the todo..."
+      type="text"
+      value=""
+    />
+  </form>
+  <div
+    className="todo-done"
+  >
+    <div
+      className="table-todo"
+    >
+      <h3>
+        Todo
+      </h3>
+      <ul />
+    </div>
+    <div
+      className="table-done"
+    >
+      <h3>
+        Done
+      </h3>
+      <ul />
+    </div>
+  </div>
+</div>
+`;

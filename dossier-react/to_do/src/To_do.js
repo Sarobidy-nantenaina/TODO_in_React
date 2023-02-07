@@ -2,7 +2,7 @@ import './To_do.css';
 import React, { useState } from "react";
 
 const TodoList = () => {
-  const [todo, setTodo] = useState("");
+  const [todo, setTodo] = useState('');
   const [todos, setTodos] = useState([]);
   const [done, setDone] = useState([]);
 
@@ -23,7 +23,7 @@ const TodoList = () => {
         <input
           type="text"
           value={todo}
-          placeholder='  tap here the todo...'
+          placeholder=' tap here the todo...'
           onChange={e => setTodo(e.target.value)}
           className='input-text'
         />
