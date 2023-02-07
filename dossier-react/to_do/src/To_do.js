@@ -1,48 +1,56 @@
 import './To_do.css';
-import React, { useState } from 'react';
+import React, { useState } from "react";
 
-function TodoList() {
-  const [todo, setTodo] = useState([]);
+const TodoList = () => {
+  const [todo, setTodo] = useState("");
+  const [todos, setTodos] = useState([]);
   const [done, setDone] = useState([]);
-  const [input, setInput] = useState('');
 
-  const handleAdd = () => {
-    setTodo([...todo, input]);
-    setInput('');
+  const handleSubmit = event => {
+    event.preventDefault();
+    setTodos([...todos, todo]);
+    setTodo("");
   };
 
-  const handleCheck = (index) => {
-    const item = todo[index];
-    setTodo(todo.filter((_, i) => i !== index));
-    setDone([...done, item]);
+  const handleCheckbox = index => {
+    setDone([...done, todos[index]]);
+    setTodos(todos.filter((_, i) => i !== index));
   };
 
   return (
     <div className='container' >
-      <input className='input_text' value={input} onChange={(e) => setInput(e.target.value)} />
-      <button className='bouton' onClick={handleAdd}>Add</button>
-      <div className='container-todo' >
+      <form onSubmit={handleSubmit} className='form-input' >
+        <input
+          type="text"
+          value={todo}
+          placeholder='  tap here the todo...'
+          onChange={e => setTodo(e.target.value)}
+          className='input-text'
+        />
+      </form>
+      <div className='todo-done' >
+      <div className='table-todo' >
         <h3>Todo</h3>
-        <ul className='item-todo' >
-          {todo.map((item, index) => (
-            <li key={index}>
-              <input type="checkbox" onChange={() => handleCheck(index)} />
-              {item}
-            </li>
-          ))}
-        </ul>
+         <ul>
+           {todos.map((todo, index) => (
+             <li key={index}>
+               <input type="checkbox" onClick={() => handleCheckbox(index)} />
+               { todo}
+              </li>
+            ))}
+          </ul>
       </div>
-      <div className='container-done' >
+      <div className='table-done'  >
         <h3>Done</h3>
-        <ul className='item-done' >
-          {done.map((item, index) => (
-            <li key={index}>{item}</li>
-          ))}
-        </ul>
+         <ul>
+           {done.map((todo, index) => (
+             <li key={index}>{todo}</li>
+            ))}
+          </ul>
+      </div>
       </div>
     </div>
   );
-}
+};
 
 export default TodoList;
-
