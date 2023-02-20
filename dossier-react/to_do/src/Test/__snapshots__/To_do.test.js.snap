@@ -1,5 +1,83 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
+exports[`TodoList Checkbox component snapshot test 1`] = `
+<div
+  className="container"
+>
+  <form
+    className="form-input"
+    onSubmit={[Function]}
+  >
+    <input
+      className="input-text"
+      onChange={[Function]}
+      placeholder=" tap here the todo..."
+      type="text"
+      value=""
+    />
+  </form>
+  <div
+    className="todo-done"
+  >
+    <div
+      className="table-todo"
+    >
+      <h3>
+        Todo
+      </h3>
+      <ul />
+    </div>
+    <div
+      className="table-done"
+    >
+      <h3>
+        Done
+      </h3>
+      <ul />
+    </div>
+  </div>
+</div>
+`;
+
+exports[`TodoList Checkbox component snapshot test 2`] = `
+<div
+  className="container"
+>
+  <form
+    className="form-input"
+    onSubmit={[Function]}
+  >
+    <input
+      className="input-text"
+      onChange={[Function]}
+      placeholder=" tap here the todo..."
+      type="text"
+      value=""
+    />
+  </form>
+  <div
+    className="todo-done"
+  >
+    <div
+      className="table-todo"
+    >
+      <h3>
+        Todo
+      </h3>
+      <ul />
+    </div>
+    <div
+      className="table-done"
+    >
+      <h3>
+        Done
+      </h3>
+      <ul />
+    </div>
+  </div>
+</div>
+`;
+
 exports[`TodoList renders correctly 1`] = `
 <div
   className="container"
